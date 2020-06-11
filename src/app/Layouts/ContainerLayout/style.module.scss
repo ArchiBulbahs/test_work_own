@@ -1,0 +1,13 @@
+.blockContainerLayout {
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #E6E6E6;
+  @media (max-width: 600px) {
+    & {
+      padding: 0;
+    }
+  }
+}

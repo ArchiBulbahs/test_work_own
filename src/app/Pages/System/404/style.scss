@@ -1,0 +1,29 @@
+.block-page-error{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  display: flex;
+
+  .block-center-page-error{
+    max-width: 532px;
+    padding: 0 16px;
+    margin: auto;
+
+    p.title-page-error{
+      font-size: 112px;
+      text-align: center;
+      line-height: 1;
+      margin: 0 0 16px 0;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    p.description-page-error{
+      font-size: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      opacity: .7;
+      margin: 0;
+    }
+  }
+}

@@ -1,17 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {BrowserRouter} from "react-router-dom";
+import App from './App'
+
+import Config from './config/Config';
+
+import axios from 'axios'
+
+import {createStore, applyMiddleware} from 'redux'
+import thunkMiddleware from 'redux-thunk'
+import rootReducer from './store/reducer'
+import {Provider} from 'react-redux';
+import {
+    setSettingsLanguage,
+    setSettingsUnits,
+    setSettingsLastSearch,
+    setSettingsListSearch
+} from './store/settings/action'
+
+window.LocalConfig = process.env.NODE_ENV !== 'production' ? Config.DEV : Config.PROD;
+
+axios.defaults.baseURL = window.LocalConfig.PROXY;
+
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
+
+if (localStorage.units) {
+    store.dispatch(setSettingsUnits(localStorage.units))
+}
+if (localStorage.language) {
+    store.dispatch(setSettingsLanguage(localStorage.language))
+}
+if (localStorage.lastSearch) {
+    store.dispatch(setSettingsLastSearch(localStorage.lastSearch))
+}
+if (localStorage.listSearch) {
+    store.dispatch(setSettingsListSearch(JSON.parse(localStorage.listSearch)))
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    <Provider store={store}>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </Provider>
+    , document.getElementById('root'));

@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routers from './Routers'
+import './style.scss'
+// import './fonts/muli/style.css'
+import {connect} from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
+
+    componentDidMount() {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://api-maps.yandex.ru/2.1/?apikey=84f31985-8897-405b-b1b3-7c6208db15a4&lang=ru_RU';
+        document.head.appendChild(script)
+    }
+
+    render() {
+        return (
+            <div className="root-app">
+                <Routers/>
+            </div>
+        )
+    }
 }
 
-export default App;
+const mapStateToProps = state => {
+    return {}
+};
+
+const mapDispatchToProps = {};
+export default connect(mapStateToProps, mapDispatchToProps)(App)

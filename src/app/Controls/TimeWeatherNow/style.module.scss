@@ -1,0 +1,60 @@
+.blockTimeWeatherNow {
+  width: 30%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  border-left: 1px solid gray;
+  padding: 5px 16px 20px 16px;
+  @media (max-width: 1000px) {
+    &:first-child {
+      border-left: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    & {
+      width: 100%;
+      float: none;
+      border-top: 1px solid gray;
+      border-left: 0;
+    }
+  }
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.temp {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 64px;
+  margin: 0;
+  @media (max-width: 600px) {
+    & {
+      width: calc(100% - 64px);
+      float: right;
+      padding: 0 0 0 16px;
+    }
+  }
+}
+
+.img {
+  width: 64px;
+  height: 64px;
+  @media (max-width: 600px) {
+    & {
+      float: left;
+    }
+  }
+}
+
+.description {
+  margin: 10px 0;
+  min-height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: RGBA(0, 0, 0, .6);
+}

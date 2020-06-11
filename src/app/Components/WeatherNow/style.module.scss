@@ -1,0 +1,52 @@
+.blockWeatherNow {
+  width: 100%;
+  overflow: hidden;
+
+  .titleWeatherNow {
+    font-size: 36px;
+    font-weight: 400;
+
+    span {
+      font-weight: 600;
+      margin: 0 0 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .blockInfoWeatherNow {
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid gray;
+
+    .blockInfoLeftWeatherNow {
+      width: 45%;
+      float: left;
+      padding: 0 16px 0 0;
+      position: relative;
+      @media (max-width: 1000px) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+
+    .blockInfoRightWeatherNow {
+      width: 55%;
+      height: 100%;
+      float: right;
+      position: relative;
+      @media (max-width: 1000px) {
+        & {
+          width: 100%;
+          border-top: 1px solid gray;
+        }
+      }
+      @media (max-width: 600px) {
+        & {
+          border-top: 0;
+        }
+      }
+    }
+  }
+}
+

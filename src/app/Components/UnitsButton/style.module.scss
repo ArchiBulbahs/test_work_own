@@ -1,0 +1,49 @@
+.blockUnitsButton{
+  height: 30px;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  @media (max-width: 500px) {
+    & {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+.button{
+  height: 30px;
+  background-color: #303030;
+  cursor: pointer;
+  float: left;
+  transition: .2s;
+  @media (max-width: 500px) {
+    & {
+      width: calc(100% / 3);
+      border-bottom: 1px solid #FFFFFF;
+    }
+  }
+  &:hover{
+    opacity: .8;
+  }
+  p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 20px;
+    @media (max-width: 500px) {
+      & {
+        padding: 0;
+      }
+    }
+  }
+}
+.buttonActive{
+  opacity: .7;
+
+  &:hover{
+    opacity: .7;
+  }
+
+}

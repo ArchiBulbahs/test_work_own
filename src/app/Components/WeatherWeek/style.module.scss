@@ -1,0 +1,25 @@
+.blockWeatherWeek {
+  margin: 50px 0 0 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  user-select: none;
+
+  span {
+    margin: 0 0 0 20px;
+    font-size: 14px;
+    color: RGBA(0, 0, 0, 0.6);
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .active {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+  }
+}
