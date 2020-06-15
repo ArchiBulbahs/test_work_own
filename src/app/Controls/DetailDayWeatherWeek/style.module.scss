@@ -2,179 +2,183 @@
   width: 100%;
   overflow: hidden;
   padding: 16px 0 0 0;
-}
 
-.blockTop {
-  width: 100%;
-  display: table;
-  padding: 0 0 16px 16px;
-  border-bottom: 1px solid RGBA(0, 0, 0, .4);
-}
+  .blockTop {
+    width: 100%;
+    display: table;
+    padding: 0 0 16px 16px;
+    border-bottom: 1px solid RGBA(0, 0, 0, .4);
 
-.groupDay {
-  font-size: 16px;
-  margin: 0;
-  height: 90px;
-  width: 150px;
-  float: left;
-  @media (max-width: 600px) {
-    & {
-      width: 100%;
-      float: none;
-      height: auto;
-    }
-  }
-}
 
-.itemGroupDay {
-  display: block;
-  margin: 0 0 5px 0;
-}
-
-.nameDay {
-  font-weight: 600;
-}
-
-.date {
-
-}
-
-.timeSun {
-  color: RGBA(0, 0, 0, .6);
-}
-
-.img {
-  width: 64px;
-  height: 64px;
-  margin: 13px;
-  float: left;
-  @media (max-width: 600px) {
-    & {
+    .groupDay {
+      font-size: 16px;
       margin: 0;
-      float: none;
-    }
-  }
-}
-
-p.description {
-  width: calc(100% - 700px);
-  height: 90px;
-  float: left;
-  margin: 0;
-  color: RGBA(0, 0, 0, .6);
-  font-size: 16px;
-  @media (max-width: 1000px) {
-    & {
-      width: calc(100% - 250px);
-    }
-  }
-  @media (max-width: 600px) {
-    & {
-      width: 100%;
-      height: auto;
-      float: none;
-      margin: 10px 0;
-    }
-  }
-}
-
-.groupInfo {
-  width: 450px;
-  height: 90px;
-  float: left;
-  @media (max-width: 1000px) {
-    & {
-      float: none;
-      width: 100%;
-      height: auto;
-      padding: 0;
-    }
-  }
-}
-
-.info {
-  margin: 0;
-  color: RGBA(0, 0, 0, .6);
-  font-size: 14px;
-  padding: 0 0 0 150px;
-
-  span {
-    display: block;
-    line-height: 22px;
-  }
-
-  @media (max-width: 1000px) {
-    & {
-      float: none;
-      width: auto;
-      display: inline-block;
-      height: auto;
-      padding: 0;
-
-      span {
-        display: inline-block;
-        margin: 0 16px 0 0;
+      height: 90px;
+      width: 150px;
+      float: left;
+      @media (max-width: 600px) {
+        & {
+          width: 100%;
+          float: none;
+          height: auto;
+        }
       }
-    }
-  }
-  @media (max-width: 800px) {
-    & {
-      width: 100%;
-      display: block;
 
-      span {
-        display: inline-block;
-        margin: 0 16px 0 0;
-      }
-    }
-  }
-  @media (max-width: 600px) {
-    & {
-      width: 100%;
-      display: block;
-
-      span {
+      .itemGroupDay {
         display: block;
-        margin: 0 16px 0 0;
+        margin: 0 0 5px 0;
+      }
+
+      .nameDay {
+        font-weight: 600;
+      }
+
+      .date {
+
+      }
+
+      .timeSun {
+        color: RGBA(0, 0, 0, .6);
+      }
+    }
+
+
+    .img {
+      width: 64px;
+      height: 64px;
+      margin: 13px;
+      float: left;
+      @media (max-width: 600px) {
+        & {
+          margin: 0;
+          float: none;
+        }
+      }
+    }
+
+    p.description {
+      width: calc(100% - 700px);
+      height: 90px;
+      float: left;
+      margin: 0;
+      color: RGBA(0, 0, 0, .6);
+      font-size: 16px;
+      @media (max-width: 1000px) {
+        & {
+          width: calc(100% - 250px);
+        }
+      }
+      @media (max-width: 600px) {
+        & {
+          width: 100%;
+          height: auto;
+          float: none;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .groupInfo {
+      width: 450px;
+      height: 90px;
+      float: left;
+      @media (max-width: 1000px) {
+        & {
+          float: none;
+          width: 100%;
+          height: auto;
+          padding: 0;
+        }
+      }
+
+      .info {
+        margin: 0;
+        color: RGBA(0, 0, 0, .6);
+        font-size: 14px;
+        padding: 0 0 0 150px;
+
+        span {
+          display: block;
+          line-height: 22px;
+        }
+
+        @media (max-width: 1000px) {
+          & {
+            float: none;
+            width: auto;
+            display: inline-block;
+            height: auto;
+            padding: 0;
+
+            span {
+              display: inline-block;
+              margin: 0 16px 0 0;
+            }
+          }
+        }
+        @media (max-width: 800px) {
+          & {
+            width: 100%;
+            display: block;
+
+            span {
+              display: inline-block;
+              margin: 0 16px 0 0;
+            }
+          }
+        }
+        @media (max-width: 600px) {
+          & {
+            width: 100%;
+            display: block;
+
+            span {
+              display: block;
+              margin: 0 16px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blockBottom {
+    width: 100%;
+    display: table;
+
+    .blockTime {
+      width: 25%;
+      float: left;
+      border-left: 1px solid RGBA(0, 0, 0, .4);
+      border-bottom: 1px solid gray;
+      padding: 10px 16px;
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      @media (max-width: 500px) {
+        & {
+          width: 50%;
+        }
+        &:first-child {
+          border-left: 1px solid RGBA(0, 0, 0, .4);
+        }
+      }
+
+      .titleTime {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+      }
+
+      .temp {
+        font-size: 14px;
+        margin: 0;
       }
     }
   }
 }
 
 
-.blockBottom {
-  width: 100%;
-  display: table;
-}
 
-.blockTime {
-  width: 25%;
-  float: left;
-  border-left: 1px solid RGBA(0, 0, 0, .4);
-  border-bottom: 1px solid gray;
-  padding: 10px 16px;
-
-  &:first-child {
-    border-left: 0;
-  }
-
-  @media (max-width: 500px) {
-    & {
-      width: 50%;
-    }
-    &:first-child {
-      border-left: 1px solid RGBA(0, 0, 0, .4);
-    }
-  }
-}
-
-.titleTime {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0 0 8px 0;
-}
-
-.temp {
-  font-size: 14px;
-  margin: 0;
-}

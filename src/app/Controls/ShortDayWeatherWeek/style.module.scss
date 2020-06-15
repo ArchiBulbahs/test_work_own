@@ -1,89 +1,92 @@
 .shellShortDayWeatherWeek {
   width: calc(100% / 7);
   float: left;
-}
 
-.blockShortDayWeatherWeek {
-  border-top: 1px solid gray;
-  background: linear-gradient(to bottom, #f1f1f1 0, #fefefe 100%);
-  padding: 10px 8px;
-  border-left: 1px solid #FFFFFF;
-}
+  .blockShortDayWeatherWeek {
+    border-top: 1px solid gray;
+    background: linear-gradient(to bottom, #f1f1f1 0, #fefefe 100%);
+    padding: 10px 8px;
+    border-left: 1px solid #FFFFFF;
 
-.tempDay {
-  font-size: 16px;
-  margin: 8px 0 8px 0;
-  font-weight: 600;
-  @media (max-width: 900px) {
-    & {
-      text-align: center;
+
+    .tempDay {
+      font-size: 16px;
+      margin: 8px 0 8px 0;
+      font-weight: 600;
+      @media (max-width: 900px) {
+        & {
+          text-align: center;
+        }
+      }
+      @media (max-width: 700px) {
+        & {
+          font-size: 12px;
+        }
+      }
     }
-  }
-  @media (max-width: 700px) {
-    & {
+
+    .tempNight {
+      color: RGBA(0, 0, 0, 0.6);
       font-size: 12px;
+      margin: 0 0 20px 0;
+      @media (max-width: 900px) {
+        & {
+          text-align: center;
+        }
+      }
+      @media (max-width: 700px) {
+        & {
+          font-size: 10px;
+        }
+      }
     }
-  }
-}
 
-.tempNight {
-  color: RGBA(0, 0, 0, 0.6);
-  font-size: 12px;
-  margin: 0 0 20px 0;
-  @media (max-width: 900px) {
-    & {
-      text-align: center;
+    .img {
+      width: 64px;
+      height: 64px;
+      @media (max-width: 900px) {
+        & {
+          display: block;
+          margin: auto;
+        }
+      }
+      @media (max-width: 600px) {
+        & {
+          width: 32px;
+          height: 32px;
+          display: block;
+          margin: auto;
+        }
+      }
     }
-  }
-  @media (max-width: 700px) {
-    & {
-      font-size: 10px;
-    }
-  }
-}
 
-.img {
-  width: 64px;
-  height: 64px;
-  @media (max-width: 900px) {
-    & {
-      display: block;
-      margin: auto;
+    .nameDay {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 10px 0;
+      @media (max-width: 900px) {
+        & {
+          text-align: center;
+        }
+      }
+      @media (max-width: 500px) {
+        & {
+          font-size: 14px;
+        }
+      }
     }
-  }
-  @media (max-width: 600px) {
-    & {
-      width: 32px;
-      height: 32px;
-      display: block;
-      margin: auto;
-    }
-  }
-}
 
-.nameDay {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0 0 10px 0;
-  @media (max-width: 900px) {
-    & {
-      text-align: center;
-    }
-  }
-  @media (max-width: 500px) {
-    & {
+    .date {
       font-size: 14px;
+      color: RGBA(0, 0, 0, 0.6);
+      margin: 0;
+      @media (max-width: 1000px) {
+        & {
+          display: none;
+        }
+      }
     }
   }
 }
 
-.date {
-  font-size: 14px;
-  color: RGBA(0, 0, 0, 0.6);
-  margin: 0;
-  @media (max-width: 1000px) {
-    & {
-      display: none;
-    }
-  }
-}
+
