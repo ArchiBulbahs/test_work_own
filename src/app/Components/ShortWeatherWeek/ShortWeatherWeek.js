@@ -6,7 +6,7 @@ import {connect} from "react-redux";
 import {getInfoWeather} from "../../../libs/infoWeather/infoWeather";
 
 
-class ShortWeatherWeek extends React.Component {
+class ShortWeatherWeek extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

@@ -6,7 +6,7 @@ import {getInfoWeather} from "../../../libs/infoWeather/infoWeather";
 import {getFormatDate, getNameDay, getFormatTime} from "../../../libs/dateFormats/dateFormats";
 import {degToDirection} from "../../../libs/function/function";
 
-class DetailWeatherWeek extends React.Component {
+class DetailWeatherWeek extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

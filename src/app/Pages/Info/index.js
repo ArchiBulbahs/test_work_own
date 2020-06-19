@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class index extends React.Component {
+export default class index extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

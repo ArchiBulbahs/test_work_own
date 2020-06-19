@@ -5,7 +5,7 @@ import './style.scss';
 import ReactNotification from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 
-class Controller extends React.Component {
+class Controller extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

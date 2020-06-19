@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 
-export default class containerPage extends React.Component {
+export default class containerPage extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

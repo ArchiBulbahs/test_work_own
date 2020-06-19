@@ -5,7 +5,7 @@ import {getWeatherNowCreatorThunk} from '../../../store/weatherNow/thunkCreator'
 import {addNotification, type_notification} from "../../Pages/System/InfoMessage/action";
 import {dictionary} from "../../../libs/language/language";
 
-class SearchCity extends React.Component {
+class SearchCity extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {

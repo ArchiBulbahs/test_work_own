@@ -8,7 +8,7 @@ import {nameTimeDay} from '../../../libs/dateFormats/dateFormats'
 import {degToDirection} from "../../../libs/function/function";
 import {dictionary} from "../../../libs/language/language";
 
-class WeatherNow extends React.Component {
+class WeatherNow extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

@@ -3,7 +3,7 @@ import style from './style.module.scss'
 import {setSettingsLanguage} from "../../../store/settings/action";
 import {connect} from "react-redux";
 
-class LanguageButton extends React.Component {
+class LanguageButton extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

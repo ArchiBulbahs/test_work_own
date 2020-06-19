@@ -4,7 +4,7 @@ import './style.scss'
 // import './fonts/muli/style.css'
 import {connect} from "react-redux";
 
-class App extends React.Component {
+class App extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

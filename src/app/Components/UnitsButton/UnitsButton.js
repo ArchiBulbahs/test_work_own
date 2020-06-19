@@ -6,7 +6,7 @@ import {changeLoadWeatherNow} from '../../../store/weatherNow/action'
 import {getWeatherNowCreatorThunk} from '../../../store/weatherNow/thunkCreator'
 import {dictionary} from "../../../libs/language/language";
 
-class UnitsButton extends React.Component {
+class UnitsButton extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {}

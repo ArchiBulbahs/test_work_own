@@ -5,7 +5,7 @@ import DetailWeatherWeek from "../DetailWeatherWeek/DetailWeatherWeek";
 import {dictionary} from "../../../libs/language/language";
 import {connect} from "react-redux";
 
-class WeatherWeek extends React.Component {
+class WeatherWeek extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
